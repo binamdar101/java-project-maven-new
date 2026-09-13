@@ -4,7 +4,7 @@ pipeline {
     agent any
 
     stages {
-        stage('Test') {
+        stage('Test,sonartest,code scan,docker build') {
             steps {
                 checkoutAndTest()
             }
